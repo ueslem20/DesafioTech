@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_adicionar">
+
+    <fragment
+        android:id="@+id/nav_adicionar"
+        android:name="com.example.desafiotech.ui.cadastro.CadastroFragment"
+        android:label="@string/nav_bt_add"
+        tools:layout="@layout/fragment_cad" >
+        <action
+            android:id="@+id/action_nav_adicionar_to_nav_deletar"
+            app:destination="@id/nav_deletar" />
+        <action
+            android:id="@+id/action_nav_adicionar_to_nav_lista"
+            app:destination="@id/nav_lista" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_deletar"
+        android:name="com.example.desafiotech.ui.deleta.DeletarFragment"
+        android:label="@string/nav_bt_listar"
+        tools:layout="@layout/fragment_deletar" >
+        <action
+            android:id="@+id/action_nav_deletar_to_nav_adicionar"
+            app:destination="@id/nav_adicionar" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_lista"
+        android:name="com.example.desafiotech.ui.lista.ListarFragment"
+        android:label="@string/nav_bt_deletar"
+        tools:layout="@layout/fragment_listar" >
+        <action
+            android:id="@+id/action_nav_lista_to_nav_adicionar"
+            app:destination="@id/nav_adicionar" />
+    </fragment>
+</navigation>

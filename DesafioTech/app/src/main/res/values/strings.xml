@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DesafioTech</string>
+
+    <string name="nav_header_title">Android Studio</string>
+
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="op_sair">Sair</string>
+
+    <string name="nav_bt_add">Add ou Alter Projetos</string>
+    <string name="nav_bt_deletar">Deletar Projetos</string>
+    <string name="nav_bt_listar">Lista de Projetos</string>
+
+    <string name="tx_cad_textoRandom">Texto Aleatório</string>
+    <string name="txt_listview">aqui é onde teria um listview para puxar os dados que não sei puxar :v</string>
+
+    <string name="txt_splashNome">Splash Arte</string>
+
+    <string name="nav_txt_projeto">Gerenciador de projeto</string>
+
+
+</resources>
